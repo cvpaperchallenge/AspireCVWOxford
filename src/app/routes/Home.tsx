@@ -19,11 +19,19 @@ import { buildMeta } from "@/lib/seo";
 export const meta: Route.MetaFunction = () =>
   buildMeta({
     title:
-      "BigMAC Workshop @ CVPR 2026 | Big Model Adaptation for Computer Vision",
+      "ASPIRE Computer Vision Workshop at Oxford VGG | Building Multimodal AI Foundation Models under Limited Resources",
     description:
-      "BigMAC Workshop at CVPR 2026 spotlights big model adaptation for computer vision. Join us on June 2026 in Denver for keynotes, paper presentations, and community updates.",
+      "ASPIRE Computer Vision Workshop at Oxford VGG, held at Magdalen College, University of Oxford on April 24, 2026. Invited talks and discussions on building multimodal AI foundation models under limited resources.",
     path: "/",
-    keywords: ["cvpr workshop 2026", "big model adaptation", "computer vision"],
+    keywords: [
+      "LIMIT.Lab",
+      "ASPIRE",
+      "Computer Vision",
+      "Oxford VGG",
+      "multimodal AI",
+      "foundation models",
+      "limited resources",
+    ],
   });
 
 function Home() {
