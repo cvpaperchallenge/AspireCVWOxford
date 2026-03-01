@@ -1,51 +1,37 @@
-import {
-  Calendar,
-  Mail,
-  MapPin,
-  ExternalLink,
-  FileText,
-  Info,
-} from "lucide-react";
+import { Calendar, Mail, MapPin } from "lucide-react";
 import { SiSlack } from "react-icons/si";
 import { Link, useLocation } from "react-router";
 import { useEffect } from "react";
 
 import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "../../components/ui/table";
-import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "../../components/ui/card";
 import { Button } from "../../components/ui/button";
 import homeData from "../../data/home.json";
 
-import programData from "../../data/program.json";
-import scheduleData from "../../data/schedule.json";
-import organizersData from "../../data/organizers.json";
 import contactData from "../../data/contact.json";
-import callForPapersData from "../../data/callForPapers.json";
 import type { Route } from "./+types/Home";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { buildMeta } from "@/lib/seo";
 
 export const meta: Route.MetaFunction = () =>
   buildMeta({
     title:
-      "BigMAC Workshop @ CVPR 2026 | Big Model Adaptation for Computer Vision",
+      "ASPIRE Computer Vision Workshop at Oxford VGG | Building Multimodal AI Foundation Models under Limited Resources",
     description:
-      "BigMAC Workshop at CVPR 2026 spotlights big model adaptation for computer vision. Join us on June 2026 in Denver for keynotes, paper presentations, and community updates.",
+      "ASPIRE Computer Vision Workshop at Oxford VGG, held at Magdalen College, University of Oxford on April 24, 2026. Invited talks and discussions on building multimodal AI foundation models under limited resources.",
     path: "/",
-    keywords: ["cvpr workshop 2026", "big model adaptation", "computer vision"],
+    keywords: [
+      "LIMIT.Lab",
+      "ASPIRE",
+      "Computer Vision",
+      "Oxford VGG",
+      "multimodal AI",
+      "foundation models",
+      "limited resources",
+    ],
   });
 
 function Home() {
@@ -65,7 +51,7 @@ function Home() {
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-background" />
           <img
-            src="/bigmac-cover.jpg"
+            src="/aspire-cover.jpg"
             alt=""
             className="absolute inset-0 h-full w-full object-cover opacity-30 dark:opacity-20"
           />
@@ -73,32 +59,17 @@ function Home() {
         </div>
         <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center gap-10">
           <div className="flex flex-col items-center gap-3 text-xs font-medium uppercase tracking-[0.35em] text-muted-foreground">
-            <span>held as part of</span>
+            <span>supported by</span>
             <div className="flex flex-wrap items-center justify-center gap-4 rounded-full border bg-background/90 px-6 py-3 shadow-sm backdrop-blur">
-              {/* <div className="flex items-center gap-3 -mx-2">
+              <div className="flex items-center gap-3">
                 <img
-                  src="/limit-logo-black-wide.png"
-                  alt="LIMIT Workshop logo"
-                  className="h-14 dark:hidden"
-                />
-                <img
-                  src="/limit-logo-white-wide.png"
-                  alt="LIMIT Workshop logo"
-                  className="hidden h-14 dark:block"
-                />
-              </div>
-              <span className="text-sm tracking-normal text-muted-foreground">
-                at
-              </span> */}
-              <div className="flex items-center gap-3 pl-4 pr-4">
-                <img
-                  src="/cvpr-logo-black.png"
-                  alt="CVPR 2026 logo"
+                  src="/aspire-logo-black.png"
+                  alt="ASPIRE logo"
                   className="h-10 dark:hidden"
                 />
                 <img
-                  src="/cvpr-logo-white.png"
-                  alt="CVPR 2026 logo"
+                  src="/aspire-logo-white.png"
+                  alt="ASPIRE logo"
                   className="hidden h-10 dark:block"
                 />
               </div>
@@ -111,7 +82,7 @@ function Home() {
             <p className="text-2xl tracking-tight sm:text-3xl md:text-4xl">
               {homeData.tagline}
             </p>
-            <p className="text-lg text-muted-foreground">{homeData.subtitle}</p>
+            {/* <p className="text-lg text-muted-foreground">{homeData.subtitle}</p> */}
           </div>
           <div className="flex flex-col items-center justify-center gap-4 text-sm sm:flex-row sm:text-base">
             <div className="flex items-center gap-2">
@@ -125,76 +96,48 @@ function Home() {
           </div>
           <div className="flex flex-col gap-4 sm:flex-row">
             <Button variant="outline" size="lg" asChild>
-              <Link to="/#program">Check Program</Link>
+              <Link to="/#program">Program coming soon</Link>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Info + Latest News Section */}
-      <div className="space-y-6 -mt-8">
-        {/* Info Section */}
-        <div className="flex items-start gap-4 rounded-lg border bg-card p-6">
-          <Info className="h-6 w-6 shrink-0 text-primary" />
-          <p className="font-medium">
-            This workshop does NOT have a call for papers. Instead, we will hold
-            an invited poster session. If you would like to nominate your paper
-            for a poster presentation at our workshop, please add it{" "}
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdei0hTZJ8bA6gAUtcpY6UiJW05wwVl7e507RLSyGi2jHnOtA/viewform?usp=dialog"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:text-primary/80"
-            >
-              here
-            </a>
-            .
-          </p>
-        </div>
-
-        {/* Latest News Section */}
-        <section id="news" className="space-y-6 mt-16">
-          <div className="space-y-2">
-            <h2 className="text-3xl tracking-tighter">Latest News</h2>
-          </div>
-          <div className="space-y-4">
-            {homeData.latestNews.map((news, index) => (
-              <div key={index} className="rounded-lg border bg-card p-6">
-                <div className="flex justify-between items-start">
-                  <div className="space-y-1">
-                    <h3 className="font-semibold">{news.title}</h3>
-                    <p className="text-sm text-muted-foreground">{news.date}</p>
-                  </div>
-                </div>
-                <p className="mt-2">{news.content}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-      </div>
-
       {/* Overview Section */}
-      <section id="about" className="space-y-6">
+      <section id="about" className="space-y-6 -mt-8">
         <div className="space-y-2">
-          <h2 className="text-3xl tracking-tighter">About BigMAC Workshop</h2>
+          <h2 className="text-3xl tracking-tighter">
+            About ASPIRE Computer Vision Workshop at Oxford VGG
+          </h2>
           <p>
-            This workshop explores how large pretrained models are
-            revolutionizing computer vision. We examine emerging techniques
-            where models like Stable Diffusion enable image-to-3D
-            reconstruction, architectures like VGG Transformer (VGGT) leverage
-            pretrained DINO for enhanced visual understanding, and methods like
-            REA harness pretrained models for improved diffusion generation. The
-            workshop covers four key areas: emerging uses of pretrained vision
-            models for 3D and generative AI, prompting techniques for vision
-            models, the role of vision models in multimodal LLMs, and
-            post-pretraining adaptation strategies. BigMAC brings together
-            researchers to address the challenges and opportunities in
-            effectively adapting foundation models for diverse downstream vision
-            tasks.
+            We are excited to announce the ASPIRE Computer Vision Workshop at
+            Oxford VGG, hosted by the Visual Geometry Group (VGG) at the
+            University of Oxford and Computer Vision Research Team at AIST, with
+            support from ASPIRE and LIMIT.Lab. This workshop will be held at the
+            historic Magdalen College, University of Oxford.
+          </p>
+          <p>
+            This workshop focuses on the central theme of &ldquo;Building
+            Multimodal AI Foundation Models under Limited Resources,&rdquo; a
+            timely and critical challenge in modern computer vision and machine
+            learning research. By bringing together researchers working at the
+            intersection of efficiency, scalability, and multimodal
+            understanding, we aim to spark new ideas and collaborations that
+            push the frontiers of the field.
+          </p>
+          <p>
+            The program features a rich mix of invited talks, oral
+            presentations, and lightning talks, designed to encourage active
+            exchange among researchers, engineers, and grad students. Beyond the
+            technical sessions, the workshop places special emphasis on
+            fostering meaningful connections across the international research
+            community, particularly between researchers from the UK, Japan, and
+            many other countries. Through structured and informal networking
+            opportunities, we hope to build lasting bridges that extend well
+            beyond the workshop itself.
           </p>
         </div>
         {/* Broader impact */}
-        <div className="space-y-2">
+        {/* <div className="space-y-2">
           <h3 className="text-2xl tracking-tighter">Broader impact</h3>
           <p>
             The goal of this workshop is to explore and discuss ways of
@@ -213,9 +156,9 @@ function Home() {
             community can best harness these pretrained foundations for
             advancing computer vision research and applications.
           </p>
-        </div>
+        </div> */}
         {/* Topics of Interest */}
-        <div className="space-y-2">
+        {/* <div className="space-y-2">
           <h3 className="text-2xl tracking-tighter">Topics of Interest</h3>
           <p>The workshop focus on following topics:</p>
           <div className="space-y-2">
@@ -225,11 +168,11 @@ function Home() {
               ))}
             </ul>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Program Section */}
-      <section id="program" className="space-y-6">
+      {/* <section id="program" className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl tracking-tighter">
             Workshop Program
@@ -282,10 +225,10 @@ function Home() {
           </Table>
           <ScrollBar orientation="horizontal" />
         </ScrollArea>
-      </section>
+      </section> */}
 
       {/* Invited Speakers Section */}
-      <section id="speakers" className="space-y-6">
+      {/* <section id="speakers" className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl tracking-tighter">
             Invited Speakers
@@ -308,8 +251,6 @@ function Home() {
                       loading="lazy"
                     />
                   </div>
-                  {/* <h3 className="font-semibold">{speaker.title}</h3>
-                  <p className="text-sm text-muted-foreground">{speaker.bio}</p> */}
                 </div>
               </CardContent>
               <CardFooter>
@@ -327,10 +268,10 @@ function Home() {
             </Card>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Organizers */}
-      <section id="organizers" className="space-y-6">
+      {/* <section id="organizers" className="space-y-6">
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-3xl tracking-tighter">Organizers</h2>
         </div>
@@ -368,7 +309,30 @@ function Home() {
             </Card>
           ))}
         </div>
-      </section>
+      </section> */}
+
+      {/* Info + Latest News Section */}
+      <div className="space-y-6">
+        {/* Latest News Section */}
+        <section id="news" className="space-y-6 mt-16">
+          <div className="space-y-2">
+            <h2 className="text-3xl tracking-tighter">Latest News</h2>
+          </div>
+          <div className="space-y-4">
+            {homeData.latestNews.map((news, index) => (
+              <div key={index} className="rounded-lg border bg-card p-6">
+                <div className="flex justify-between items-start">
+                  <div className="space-y-1">
+                    <h3 className="font-semibold">{news.title}</h3>
+                    <p className="text-sm text-muted-foreground">{news.date}</p>
+                  </div>
+                </div>
+                <p className="mt-2">{news.content}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
 
       {/* Contact Information */}
       <section id="contact" className="space-y-6">

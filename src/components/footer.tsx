@@ -16,25 +16,14 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">ICCV 2025</p>
         </div> */}
 
-        {/* Past BigMAC Workshop */}
-        <div className="flex flex-col gap-2">
-          <h3 className="font-medium">Past BigMAC Workshops</h3>
-          <Link
-            to="https://bigmac-vision.github.io/"
-            className="text-sm text-muted-foreground hover:text-foreground"
-          >
-            ICCV 2023 BigMAC
-          </Link>
-        </div>
-
         {/* Related Workshop */}
         <div className="flex flex-col gap-2">
           <h3 className="font-medium">Related Workshops</h3>
           <Link
-            to="https://cvpr2026-vgi-workshop.limitlab.xyz/"
+            to=""
             className="text-sm text-muted-foreground hover:text-foreground"
           >
-            CVPR 2026 VGI
+            ASPIRE Computer Vision Workshop at Tokyo
           </Link>
         </div>
 
@@ -47,7 +36,7 @@ export function Footer() {
           >
             Home
           </Link>
-          <Link
+          {/* <Link
             to="/#program"
             className="text-sm text-muted-foreground hover:text-foreground"
           >
@@ -64,7 +53,7 @@ export function Footer() {
             className="text-sm text-muted-foreground hover:text-foreground"
           >
             Organizers
-          </Link>
+          </Link> */}
           <Link
             to="/#contact"
             className="text-sm text-muted-foreground hover:text-foreground"
@@ -127,30 +116,10 @@ export function Footer() {
 
       {/* Credits */}
       <div className="container mt-8 border-t pt-4 px-6 xl:w-6xl">
-        <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-          <Link to="/" className="flex items-center space-x-2">
-            <span className="font-bold text-lg">BigMAC Workshop</span>
-            {/* <img
-              src={blackLimitLabLogoWide}
-              alt="LIMIT Workshop logo"
-              className="object-contain h-16 w-auto dark:hidden"
-              loading="lazy"
-            />
-            <img
-              src={whiteLimitLabLogoWide}
-              alt="LIMIT Workshop logo"
-              className="object-contain h-16 w-auto hidden dark:block"
-              loading="lazy"
-            /> */}
-          </Link>
-          <p className="text-center text-sm text-muted-foreground md:text-left">
-            &copy; {new Date().getFullYear()} BigMAC Workshop. All rights
-            reserved.
-          </p>
-          <p className="text-center text-sm text-muted-foreground md:text-right">
-            Website built by cvpaper.challenge Dev Team
-          </p>
-        </div>
+        <p className="text-center text-sm text-muted-foreground">
+          &copy; {new Date().getFullYear()} ASPIRE Computer Vision Workshop at
+          Oxford VGG. All rights reserved. | Built by cvpaper.challenge Dev Team
+        </p>
       </div>
     </footer>
   );

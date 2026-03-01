@@ -1,10 +1,10 @@
 {
-  "title": "BigMAC: Big Model Adaptation for Computer Vision",
+  "title": "ASPIRE Computer Vision Workshop at Oxford VGG",
   "tagline": "",
   "subtitle": "CVPR 2026 Workshop",
   "eventInfo": {
-    "date": "Not Decided Yet",
-    "location": "Denver Colorado"
+    "date": "April 24, 2026 (GMT)",
+    "location": "Magdalen College, University of Oxford"
   },
   "overview": {
     "mission": "This workshop explores how large pretrained models are revolutionizing computer vision. We examine emerging techniques where models like Stable Diffusion enable image-to-3D reconstruction, architectures like VGG Transformer (VGGT) leverage pretrained DINO for enhanced visual understanding, and methods like REA harness pretrained models for improved diffusion generation. BigMAC brings together researchers to address the challenges and opportunities in effectively adapting foundation models for diverse downstream vision tasks.",
@@ -25,7 +25,7 @@
   "latestNews": [
     {
       "title": "Workshop page open",
-      "date": "January 13, 2026",
+      "date": "February 28, 2026",
       "content": "We are excited to announce that our workshop page is now live. We will continue to add information, so please check back regularly for updates."
     }
   ]

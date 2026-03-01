@@ -1,20 +1,20 @@
 import type { MetaDescriptor } from "react-router";
 
-const SITE_URL = "https://cvpr2026-bigmac-workshop.limitlab.xyz";
-const DEFAULT_IMAGE = `${SITE_URL}/bigmac-ogp.jpg`;
+const SITE_URL = "https://aspire-oxfordcv-workshop-2026apr.limitlab.xyz";
+const DEFAULT_IMAGE = `${SITE_URL}/aspire-ogp.jpg`;
 const DEFAULT_IMAGE_ALT =
-  "BigMAC Workshop at CVPR 2026 wordmark on a dark gradient background";
-const SITE_NAME =
-  "BigMAC: Big Model Adaptation for Computer Vision @ CVPR 2026";
+  "ASPIRE Computer Vision Workshop at Oxford VGG cover image";
+const SITE_NAME = "ASPIRE Computer Vision Workshop at Oxford VGG";
 const DEFAULT_DESCRIPTION =
-  "Official site for the CVPR 2026 Workshop on Big Model Adaptation for Computer Vision.";
+  "Official site for the ASPIRE Computer Vision Workshop at Oxford VGG. Building Multimodal AI Foundation Models under Limited Resources.";
 const DEFAULT_KEYWORDS = [
-  "BigMAC Workshop",
-  "CVPR 2026",
-  "Big Model Adaptation",
+  "ASPIRE",
+  "Computer Vision",
+  "Oxford VGG",
+  "Visual Geometry Group",
   "Foundation Models",
-  "Big Models",
-  "Adaptation",
+  "Multimodal AI",
+  "AIST",
   "LIMIT Lab",
 ];
 

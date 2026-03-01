@@ -1,1 +1,1 @@
-# BigMAC
+# ASPIRE Computer Vision Workshop at Oxford VGG
