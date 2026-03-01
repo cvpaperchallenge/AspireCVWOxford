@@ -6,13 +6,13 @@
       "type": "Email",
       "icon": "Mail",
       "description": "For general inquiries, please contact us at:",
-      "value": "yuki.asano[at]utn.de"
+      "value": "hirokatsu.kataoka[at]aist.go.jp"
     },
     {
       "type": "Location",
       "icon": "MapPin",
       "description": "The workshop will be held at:",
-      "value": "Denver Colorado"
+      "value": "Magdalen College, University of Oxford"
     },
     {
       "type": "Slack",
