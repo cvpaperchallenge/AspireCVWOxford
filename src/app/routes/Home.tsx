@@ -11,7 +11,7 @@ import {
 } from "../../components/ui/card";
 import { Button } from "../../components/ui/button";
 import homeData from "../../data/home.json";
-
+import programData from "../../data/program.json";
 import contactData from "../../data/contact.json";
 import type { Route } from "./+types/Home";
 import { buildMeta } from "@/lib/seo";
@@ -96,7 +96,7 @@ function Home() {
           </div>
           <div className="flex flex-col gap-4 sm:flex-row">
             <Button variant="outline" size="lg" asChild>
-              <Link to="/#program">Program coming soon</Link>
+              <Link to="/#program">View Program</Link>
             </Button>
           </div>
         </div>
@@ -310,6 +310,31 @@ function Home() {
           ))}
         </div>
       </section> */}
+
+      {/* Program Section */}
+      <section id="program" className="space-y-6">
+        <div className="space-y-2">
+          <h2 className="text-3xl tracking-tighter">Workshop Program</h2>
+        </div>
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse">
+            <thead>
+              <tr className="border-b">
+                <th className="text-left p-4 font-semibold">Time</th>
+                <th className="text-left p-4 font-semibold">Session</th>
+              </tr>
+            </thead>
+            <tbody>
+              {programData.schedule.map((item, index) => (
+                <tr key={index} className="border-b">
+                  <td className="p-4">{item.time}</td>
+                  <td className="p-4">{item.session}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
 
       {/* Info + Latest News Section */}
       <div className="space-y-6">
