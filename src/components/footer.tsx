@@ -36,24 +36,18 @@ export function Footer() {
           >
             Home
           </Link>
-          {/* <Link
+          <Link
             to="/#program"
             className="text-sm text-muted-foreground hover:text-foreground"
           >
             Program
           </Link>
           <Link
-            to="/#speakers"
+            to="/#news"
             className="text-sm text-muted-foreground hover:text-foreground"
           >
-            Speakers
+            News
           </Link>
-          <Link
-            to="/#organizers"
-            className="text-sm text-muted-foreground hover:text-foreground"
-          >
-            Organizers
-          </Link> */}
           <Link
             to="/#contact"
             className="text-sm text-muted-foreground hover:text-foreground"

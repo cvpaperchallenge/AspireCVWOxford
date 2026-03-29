@@ -57,5 +57,55 @@
     ],
     "moderator": "TBD"
   },
-  "sessionStructure": []
+  "sessionStructure": [],
+  "schedule": [
+    {
+      "time": "10:00 - 10:10",
+      "session": "Opening remarks (Hirokatsu Kataoka)"
+    },
+    {
+      "time": "10:10 - 10:40",
+      "session": "Invited talk 1 (Andrew Zisserman; tentative)"
+    },
+    {
+      "time": "10:40 - 10:45",
+      "session": "Group photo session"
+    },
+    {
+      "time": "10:45 - 11:40",
+      "session": "Lightning talk 1 (TBD; tentative)"
+    },
+    {
+      "time": "11:40 - 12:10",
+      "session": "Invited talk 2 (TBD; tentative)"
+    },
+    {
+      "time": "12:10 - 13:10",
+      "session": "Lunch time (60 min)"
+    },
+    {
+      "time": "13:10 - 14:00",
+      "session": "Oral tak 1 (TBD; tentative)"
+    },
+    {
+      "time": "14:00 - 14:50",
+      "session": "Lightning talk 2 (TBD; tentative)"
+    },
+    {
+      "time": "14:50 - 15:10",
+      "session": "Coffee break"
+    },
+    {
+      "time": "15:10 - 15:40",
+      "session": "Invited talk 3 (Yuki M. Asano; tentative)"
+    },
+    {
+      "time": "15:40 - 16:40",
+      "session": "Oral talk 2 (TBD; tentative)"
+    },
+    {
+      "time": "16:40 - 17:10",
+      "session": "Invited talk 4 + Closing remarks (Christian Rupprecht)"
+    }
+  ]
 }
