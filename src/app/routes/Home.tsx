@@ -320,16 +320,87 @@ function Home() {
           <table className="w-full border-collapse">
             <thead>
               <tr className="border-b">
-                <th className="text-left p-4 font-semibold">Time</th>
+                <th className="text-left p-4 font-semibold w-[140px]">Time</th>
                 <th className="text-left p-4 font-semibold">Session</th>
               </tr>
             </thead>
             <tbody>
               {programData.schedule.map((item, index) => (
-                <tr key={index} className="border-b">
-                  <td className="p-4">{item.time}</td>
-                  <td className="p-4">{item.session}</td>
-                </tr>
+                <>
+                  <tr key={index} className="border-b">
+                    <td className="p-4 align-top">
+                      {item.timeStart} - {item.timeEnd}
+                    </td>
+                    <td className="p-4">
+                      <div className="space-y-1">
+                        <div className="font-semibold">{item.event}</div>
+                        {item.presenter && (
+                          <div className="text-sm text-muted-foreground">
+                            {item.presenter}
+                          </div>
+                        )}
+                        {item.topic && (
+                          <div className="text-sm italic text-muted-foreground">
+                            {item.topic}
+                          </div>
+                        )}
+                        {item.details && item.details.length > 0 && (
+                          <div className="mt-2 space-y-2">
+                            {item.details.map((detail, detailIndex) => (
+                              <div
+                                key={detailIndex}
+                                className="pl-4 border-l-2 border-muted"
+                              >
+                                {detail.id && (
+                                  <span className="font-mono text-xs text-muted-foreground mr-2">
+                                    {detail.id}.
+                                  </span>
+                                )}
+                                {detail.presenter && (
+                                  <span className="text-sm">
+                                    {detail.presenter}
+                                  </span>
+                                )}
+                                {detail.title && (
+                                  <div className="text-sm text-muted-foreground mt-1">
+                                    {detail.title}
+                                  </div>
+                                )}
+                                {detail.links && detail.links.length > 0 && (
+                                  <div className="flex gap-2 mt-1 flex-wrap">
+                                    {detail.links.map(
+                                      (
+                                        link: { label: string; url: string },
+                                        linkIndex: number,
+                                      ) => (
+                                        <span key={linkIndex}>
+                                          {link.url ? (
+                                            <a
+                                              href={link.url}
+                                              target="_blank"
+                                              rel="noreferrer"
+                                              className="text-xs text-primary hover:underline"
+                                            >
+                                              [{link.label}]
+                                            </a>
+                                          ) : (
+                                            <span className="text-xs text-muted-foreground">
+                                              [{link.label}]
+                                            </span>
+                                          )}
+                                        </span>
+                                      ),
+                                    )}
+                                  </div>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    </td>
+                  </tr>
+                </>
               ))}
             </tbody>
           </table>
