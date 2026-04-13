@@ -347,10 +347,7 @@ function Home() {
                         {item.details && item.details.length > 0 && (
                           <div className="mt-2 space-y-2">
                             {item.details.map((detail, detailIndex) => (
-                              <div
-                                key={detailIndex}
-                                className="pl-4 border-l-2 border-muted"
-                              >
+                              <div key={detailIndex} className="pl-4">
                                 {detail.id && (
                                   <span className="font-mono text-xs text-muted-foreground mr-2">
                                     {detail.id}.
