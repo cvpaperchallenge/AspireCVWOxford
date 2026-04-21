@@ -363,9 +363,9 @@ function Home() {
                                     {detail.title}
                                   </div>
                                 )}
-                                {detail.links && detail.links.length > 0 && (
+                                {detail.links?.length > 0 && (
                                   <div className="flex gap-2 mt-1 flex-wrap">
-                                    {detail.links.map(
+                                    {detail.links?.map(
                                       (
                                         link: { label: string; url: string },
                                         linkIndex: number,
