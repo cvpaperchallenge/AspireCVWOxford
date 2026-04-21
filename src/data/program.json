@@ -67,15 +67,16 @@
   },
   "schedule": [
     {
-      "timeStart": "9:00",
-      "timeEnd": "9:10",
-      "event": "College Open"
+      "timeStart": "8:30",
+      "timeEnd": "9:00",
+      "event": "College Open",
+      "sessionChair": "Hirokatsu Kataoka"
     },
     {
-      "timeStart": "9:10",
+      "timeStart": "9:00",
       "timeEnd": "9:20",
-      "event": "Opening remarks",
-      "presenter": "Hirokatsu Kataoka (AIST / University of Oxford)"
+      "event": "Opening remarks (10 min)",
+      "presenter": "Hirokatsu Kataoka (AIST / Oxford)"
     },
     {
       "timeStart": "9:20",
@@ -84,17 +85,17 @@
       "topic": "Oral 1-3 x 10min",
       "details": [
         {
-          "id": "O-1",
+          "id": "O1",
           "presenter": "Partha Das (University of Amsterdam)",
           "title": "TBD"
         },
         {
-          "id": "O-2",
+          "id": "O2",
           "presenter": "Dan Schofield (University of Oxford)",
           "title": "TBD"
         },
         {
-          "id": "O-3",
+          "id": "O3",
           "presenter": "Guangming Wang (University of Cambridge)",
           "title": "Beyond Digital Twins: World Models for Robotics"
         }
@@ -104,7 +105,8 @@
       "timeStart": "9:50",
       "timeEnd": "10:20",
       "event": "Invited talk 1",
-      "presenter": "Andrew Zisserman (University of Oxford / DeepMind)"
+      "presenter": "Andrew Zisserman (Oxford / DeepMind)",
+      "topic": "Boosting Retrieval Performance of Audio-Visual Foundation Models"
     },
     {
       "timeStart": "10:20",
@@ -120,20 +122,26 @@
       "timeStart": "11:00",
       "timeEnd": "12:00",
       "event": "Lightning talk session 1",
-      "topic": "Speakers 1-9 x 5min",
+      "topic": "Speakers 1-10 x 5min",
+      "sessionChair": "Yoshihiro Fukuhara",
       "details": [
         {
-          "id": "S-1",
+          "id": "S1",
+          "presenter": "Lorenza Prospero (University of Oxford)",
+          "title": "PoseDreamer: Scalable and Photorealistic Human Data Generation Pipeline with Diffusion Models"
+        },
+        {
+          "id": "S2",
           "presenter": "Riku Takahashi (Hosei University / DFKI)",
           "title": "Scene-Aware Long-Term Human Motion Generation via Diffusion Noise Optimization"
         },
         {
-          "id": "S-2",
+          "id": "S3",
           "presenter": "Ziling Huang (National Institute of Informatics)",
           "title": "Long Video Understanding with MLLMs"
         },
         {
-          "id": "S-3",
+          "id": "S4",
           "presenter": "Kaito Shiku (Kyushu University)",
           "title": "Auxiliary Gene Learning: Spatial Gene Expression Estimation from Pathology Images by Auxiliary Gene Selection",
           "links": [
@@ -145,49 +153,74 @@
           ]
         },
         {
-          "id": "S-4",
+          "id": "S5",
           "presenter": "Toya Oyama (The University of Tokyo, Satoh-lab)",
-          "title": "Multi-teacher distillation for text-to-video retrieval"
+          "title": "multi-teacher distillation for text-to-video retrieval"
         },
         {
-          "id": "S-5",
+          "id": "S6",
           "presenter": "Yiming Chen (University of Oxford)",
           "title": "PhysFormer: A Physics-Grounded Transformer for 4D Multi-Object Dynamics Generation in Coordinate Space"
         },
         {
-          "id": "S-6",
+          "id": "S7",
           "presenter": "Koichi Namekata (University of Oxford)",
-          "title": "Go-with-the-Track: Video Compositing and Motion Control with Point Tracking (SIGGRAPH 2026)",
+          "title": "Go-with-the-Track: Video Compositing and Motion Control with Point Tracking (SIGGRAPH'26)",
           "links": [
-            { "label": "Project", "url": "https://gowiththetrack.github.io/" }
+            { "label": "link", "url": "https://gowiththetrack.github.io/" }
           ]
         },
         {
-          "id": "S-7",
+          "id": "S8",
           "presenter": "Paul Engstler (University of Oxford)",
           "title": "SynCity and SynCity 3000: Generating Synthetic 3D Worlds"
         },
         {
-          "id": "S-8",
-          "presenter": "Lorenza Prospero (University of Oxford)",
-          "title": "TBD"
-        },
-        {
-          "id": "S-9",
+          "id": "S9",
           "presenter": "Chen Hou (University of Oxford)",
           "title": "TBD"
         },
         {
-          "id": "S-10",
+          "id": "S10",
           "presenter": "Ray Li (University of Oxford)",
           "title": "TBD; pre-recorded video"
         }
       ]
     },
     {
+      "timeStart": "11:50",
+      "timeEnd": "12:00",
+      "event": "Buffer time (10 min)"
+    },
+    {
       "timeStart": "12:00",
       "timeEnd": "12:30",
-      "event": "TBD"
+      "event": "Oral session 2",
+      "sessionChair": "Shumpei Takezaki",
+      "details": [
+        {
+          "id": "O4",
+          "presenter": "Yoshihiro Fukuhara (CADDi / AIST / Waseda University)",
+          "title": "Who Sets the Questions?: Agenda-Setting Through Workshops in the Age of AI"
+        },
+        {
+          "id": "O5",
+          "presenter": "Go Ohtani (AIST)",
+          "title": "Rethinking Image Super-Resolution from Training Data Perspectives (ECCV 2024)",
+          "links": [
+            { "label": "Paper", "url": "https://arxiv.org/abs/2409.00768" },
+            {
+              "label": "Code",
+              "url": "https://github.com/gohtanii/DiverSeg-dataset"
+            }
+          ]
+        },
+        {
+          "id": "O6",
+          "presenter": "Oishi Deb (University of Oxford / DeepMind)",
+          "title": "Brain Organoid Mitosis Classification"
+        }
+      ]
     },
     {
       "timeStart": "12:30",
@@ -198,71 +231,73 @@
       "timeStart": "13:30",
       "timeEnd": "14:00",
       "event": "Invited talk 2",
-      "presenter": "Yuki M. Asano (UTN)"
+      "presenter": "Yuki M. Asano (UTN)",
+      "sessionChair": "Kohsuke Ide"
     },
     {
       "timeStart": "14:00",
+      "timeEnd": "14:10",
+      "event": "Learning reward functions for language-guided robotics",
+      "presenter": "João Henriques (University of Oxford)"
+    },
+    {
+      "timeStart": "14:10",
       "timeEnd": "15:00",
-      "event": "Oral / Lightning talk session 2",
-      "topic": "Oral 2 x 10min / Spotlight 8 x 5min",
+      "event": "Lightning talk session 2",
+      "topic": "Spotlight 9 x 5min",
+      "sessionChair": "Daichi Otsuka",
       "details": [
         {
-          "id": "O-4",
-          "presenter": "Oishi Deb (University of Oxford / DeepMind)",
-          "title": "Brain Organoid Mitosis Classification (ICIP 2025)",
-          "links": [
-            {
-              "label": "Paper",
-              "url": "https://ieeexplore.ieee.org/document/11084740"
-            }
-          ]
-        },
-        {
-          "id": "O-5",
-          "presenter": "Yuxin Yao (University of Cambridge)",
-          "title": "TBD"
-        },
-        {
-          "id": "S-9",
+          "id": "S9",
           "presenter": "Hinako Mitsuoka (Meijo University)",
           "title": "Human Brain-Inspired Network for Cell Image Segmentation"
         },
         {
-          "id": "S-10",
+          "id": "S10",
           "presenter": "Takashi Otonari (The University of Tokyo)",
           "title": "Novel View Synthesis in Urban Scenes"
         },
         {
-          "id": "S-11",
+          "id": "S11",
           "presenter": "Kota Shimomura (Chubu University)",
-          "title": "P2GS: Physical Prior-guided Gaussian Splatting for Photometrically Consistent Urban Reconstruction (CVPR 2026)"
+          "title": "P2GS: Physical Prior-guided Gaussian Splatting for Photometrically Consistent Urban Reconstruction (CVPR2026)"
         },
         {
-          "id": "S-12",
+          "id": "S12",
           "presenter": "Daichi Otsuka (AIST / Science Tokyo)",
-          "title": "TBD"
+          "title": "Construction of a 3D Spatial Recognition Model Using Multi-View Images and Linguistic Information"
         },
         {
-          "id": "S-13",
+          "id": "S13",
           "presenter": "Mizuki Kojima (Science Tokyo)",
-          "title": "TBD"
+          "title": "Input Design to Enhance Neural Network Performance Without Pre-trained Models"
         },
         {
-          "id": "S-14",
+          "id": "S14",
           "presenter": "Zhaoyi An (Science Tokyo)",
           "title": "Towards Building a Sign Language Foundation Model: Challenges, Progress and Future Directions"
         },
         {
-          "id": "S-15",
+          "id": "S15",
           "presenter": "Kohsuke Ide (AIST / University of Tsukuba)",
-          "title": "TBD"
+          "title": "Beyond Single Object: Learning 3D Relations with Large Language Models (CVPRF 2026)"
         },
         {
-          "id": "S-16",
+          "id": "S16",
           "presenter": "Shumpei Takezaki (Kyushu University / DFKI)",
           "title": "Cross Entropy Can Train Diffusion Models"
+        },
+        {
+          "id": "S17",
+          "presenter": "Takumi Hirose (Science Tokyo)",
+          "title": "Referring Expression comprehension for Small Objects"
         }
       ]
+    },
+    {
+      "timeStart": "14:55",
+      "timeEnd": "15:00",
+      "event": "Buffer time (5 min)"
     },
     {
       "timeStart": "15:00",
@@ -271,41 +306,18 @@
     },
     {
       "timeStart": "15:30",
-      "timeEnd": "15:50",
-      "event": "Oral session 3",
-      "details": [
-        {
-          "id": "O-6",
-          "presenter": "Yoshihiro Fukuhara (CADDi / AIST / Waseda University)",
-          "title": "TBD"
-        },
-        {
-          "id": "O-7",
-          "presenter": "Go Ohtani (AIST)",
-          "title": "Rethinking Image Super-Resolution from Training Data Perspectives (ECCV 2024)",
-          "links": [
-            { "label": "Paper", "url": "https://arxiv.org/abs/2409.00768" },
-            {
-              "label": "Code",
-              "url": "https://github.com/gohtanii/DiverSeg-dataset"
-            }
-          ]
-        }
-      ]
+      "timeEnd": "16:10",
+      "event": "Invited talk 4 + Closing remarks",
+      "presenter": "Christian Rupprecht (Oxford)",
+      "sessionChair": "Hirokatsu Kataoka"
     },
     {
-      "timeStart": "15:50",
+      "timeStart": "16:10",
       "timeEnd": "16:30",
-      "event": "Invited talk 3 + Closing remarks",
-      "presenter": "Christian Rupprecht (Oxford)"
+      "event": "Colledge Close"
     },
     {
-      "timeStart": "16:30",
-      "timeEnd": "16:30",
-      "event": "College Close"
-    },
-    {
-      "timeStart": "18:00",
+      "timeStart": "18:30",
       "timeEnd": "20:30",
       "event": "Banquet"
     }
