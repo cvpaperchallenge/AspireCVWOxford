@@ -87,17 +87,20 @@
         {
           "id": "O1",
           "presenter": "Partha Das (University of Amsterdam)",
-          "title": "TBD"
+          "title": "TBD",
+          "links": []
         },
         {
           "id": "O2",
           "presenter": "Dan Schofield (University of Oxford)",
-          "title": "TBD"
+          "title": "TBD",
+          "links": []
         },
         {
           "id": "O3",
           "presenter": "Guangming Wang (University of Cambridge)",
-          "title": "Beyond Digital Twins: World Models for Robotics"
+          "title": "Beyond Digital Twins: World Models for Robotics",
+          "links": []
         }
       ]
     },
@@ -128,17 +131,20 @@
         {
           "id": "S1",
           "presenter": "Lorenza Prospero (University of Oxford)",
-          "title": "PoseDreamer: Scalable and Photorealistic Human Data Generation Pipeline with Diffusion Models"
+          "title": "PoseDreamer: Scalable and Photorealistic Human Data Generation Pipeline with Diffusion Models",
+          "links": []
         },
         {
           "id": "S2",
           "presenter": "Riku Takahashi (Hosei University / DFKI)",
-          "title": "Scene-Aware Long-Term Human Motion Generation via Diffusion Noise Optimization"
+          "title": "Scene-Aware Long-Term Human Motion Generation via Diffusion Noise Optimization",
+          "links": []
         },
         {
           "id": "S3",
           "presenter": "Ziling Huang (National Institute of Informatics)",
-          "title": "Long Video Understanding with MLLMs"
+          "title": "Long Video Understanding with MLLMs",
+          "links": []
         },
         {
           "id": "S4",
@@ -155,12 +161,14 @@
         {
           "id": "S5",
           "presenter": "Toya Oyama (The University of Tokyo, Satoh-lab)",
-          "title": "multi-teacher distillation for text-to-video retrieval"
+          "title": "multi-teacher distillation for text-to-video retrieval",
+          "links": []
         },
         {
           "id": "S6",
           "presenter": "Yiming Chen (University of Oxford)",
-          "title": "PhysFormer: A Physics-Grounded Transformer for 4D Multi-Object Dynamics Generation in Coordinate Space"
+          "title": "PhysFormer: A Physics-Grounded Transformer for 4D Multi-Object Dynamics Generation in Coordinate Space",
+          "links": []
         },
         {
           "id": "S7",
@@ -173,17 +181,20 @@
         {
           "id": "S8",
           "presenter": "Paul Engstler (University of Oxford)",
-          "title": "SynCity and SynCity 3000: Generating Synthetic 3D Worlds"
+          "title": "SynCity and SynCity 3000: Generating Synthetic 3D Worlds",
+          "links": []
         },
         {
           "id": "S9",
           "presenter": "Chen Hou (University of Oxford)",
-          "title": "TBD"
+          "title": "TBD",
+          "links": []
         },
         {
           "id": "S10",
           "presenter": "Ray Li (University of Oxford)",
-          "title": "TBD; pre-recorded video"
+          "title": "TBD; pre-recorded video",
+          "links": []
         }
       ]
     },
@@ -201,7 +212,8 @@
         {
           "id": "O4",
           "presenter": "Yoshihiro Fukuhara (CADDi / AIST / Waseda University)",
-          "title": "Who Sets the Questions?: Agenda-Setting Through Workshops in the Age of AI"
+          "title": "Who Sets the Questions?: Agenda-Setting Through Workshops in the Age of AI",
+          "links": []
         },
         {
           "id": "O5",
@@ -218,7 +230,8 @@
         {
           "id": "O6",
           "presenter": "Oishi Deb (University of Oxford / DeepMind)",
-          "title": "Brain Organoid Mitosis Classification"
+          "title": "Brain Organoid Mitosis Classification",
+          "links": []
         }
       ]
     },
@@ -250,47 +263,56 @@
         {
           "id": "S9",
           "presenter": "Hinako Mitsuoka (Meijo University)",
-          "title": "Human Brain-Inspired Network for Cell Image Segmentation"
+          "title": "Human Brain-Inspired Network for Cell Image Segmentation",
+          "links": []
         },
         {
           "id": "S10",
           "presenter": "Takashi Otonari (The University of Tokyo)",
-          "title": "Novel View Synthesis in Urban Scenes"
+          "title": "Novel View Synthesis in Urban Scenes",
+          "links": []
         },
         {
           "id": "S11",
           "presenter": "Kota Shimomura (Chubu University)",
-          "title": "P2GS: Physical Prior-guided Gaussian Splatting for Photometrically Consistent Urban Reconstruction (CVPR2026)"
+          "title": "P2GS: Physical Prior-guided Gaussian Splatting for Photometrically Consistent Urban Reconstruction (CVPR2026)",
+          "links": []
         },
         {
           "id": "S12",
           "presenter": "Daichi Otsuka (AIST / Science Tokyo)",
-          "title": "Construction of a 3D Spatial Recognition Model Using Multi-View Images and Linguistic Information"
+          "title": "Construction of a 3D Spatial Recognition Model Using Multi-View Images and Linguistic Information",
+          "links": []
         },
         {
           "id": "S13",
           "presenter": "Mizuki Kojima (Science Tokyo)",
-          "title": "Input Design to Enhance Neural Network Performance Without Pre-trained Models"
+          "title": "Input Design to Enhance Neural Network Performance Without Pre-trained Models",
+          "links": []
         },
         {
           "id": "S14",
           "presenter": "Zhaoyi An (Science Tokyo)",
-          "title": "Towards Building a Sign Language Foundation Model: Challenges, Progress and Future Directions"
+          "title": "Towards Building a Sign Language Foundation Model: Challenges, Progress and Future Directions",
+          "links": []
         },
         {
           "id": "S15",
           "presenter": "Kohsuke Ide (AIST / University of Tsukuba)",
-          "title": "Beyond Single Object: Learning 3D Relations with Large Language Models (CVPRF 2026)"
+          "title": "Beyond Single Object: Learning 3D Relations with Large Language Models (CVPRF 2026)",
+          "links": []
         },
         {
           "id": "S16",
           "presenter": "Shumpei Takezaki (Kyushu University / DFKI)",
-          "title": "Cross Entropy Can Train Diffusion Models"
+          "title": "Cross Entropy Can Train Diffusion Models",
+          "links": []
         },
         {
           "id": "S17",
           "presenter": "Takumi Hirose (Science Tokyo)",
-          "title": "Referring Expression comprehension for Small Objects"
+          "title": "Referring Expression comprehension for Small Objects",
+          "links": []
         }
       ]
     },
