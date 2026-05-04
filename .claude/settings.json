@@ -1,0 +1,47 @@
+{
+    "env": {
+        "CLAUDE_CODE_USE_VERTEX": "true",
+        "ANTHROPIC_VERTEX_PROJECT_ID": "caddi-ai-tools-dev",
+        "CLOUD_ML_REGION": "us-east5",
+        "DISABLE_AUTOUPDATER": "1",
+        "DISABLE_BUG_COMMAND": "true",
+        "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-opus-4-6",
+        "ANTHROPIC_DEFAULT_HAIKU_MODEL": "claude-haiku-4-5@20251001",
+        "CLAUDE_CODE_EFFORT_LEVEL": "medium"
+    },
+    "includeCoAuthoredBy": false,
+    "permissions": {
+        "allow": [
+            "Bash",
+            "Read",
+            "MultiEdit",
+            "WebFetch",
+            "SlashCommand",
+            "Skill",
+            "WebSearch"
+        ],
+        "deny": [
+            "Bash(rm:*)",
+            "Bash(rmdir:*)",
+            "Bash(chmod 777:*)",
+            "Bash(chown root:*)",
+            "Bash(while true:*)",
+            "Bash(gcloud:*)",
+            "Bash(gsutil:*)",
+            "Bash(git push --force:*)",
+            "Bash(git push origin main:*)",
+            "NotebookEdit",
+            "NotebookRead"
+        ]
+    },
+    "showClearContextOnPlanAccept": true,
+    "model": "claude-opus-4-6",
+    "statusLine": {
+        "type": "command",
+        "command": ".claude/statusline.sh"
+    },
+    "enabledPlugins": {
+        "security-guidance@claude-plugins-official": true
+    },
+    "alwaysThinkingEnabled": true
+}
