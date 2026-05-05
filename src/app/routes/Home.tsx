@@ -409,7 +409,8 @@ function Home() {
         <div className="space-y-2">
           <h2 className="text-3xl tracking-tighter">Photo Galleries</h2>
           <p className="text-muted-foreground">
-            A glimpse into our workshop days at Magdalen College, University of Oxford
+            A glimpse into our workshop days at Magdalen College, University of
+            Oxford
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
