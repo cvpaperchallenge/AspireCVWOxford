@@ -404,6 +404,47 @@ function Home() {
         </div>
       </section>
 
+      {/* Photo Galleries Section */}
+      <section id="gallery" className="space-y-6">
+        <div className="space-y-2">
+          <h2 className="text-3xl tracking-tighter">Photo Galleries</h2>
+          <p className="text-muted-foreground">
+            A glimpse into our workshop days at Magdalen College, University of
+            Oxford
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {[
+            "88xe2pp-fnZsLucEc_MlTKAM2O06Xrfln06mQMXDjSU-1200--cover.jpg",
+            "yJCrIrTsmA2HyVcUA_YTMkCGB04NpVGpKalu4IIe0MQ-1200--cover.jpg",
+            "Y41oT8FtjM08O1BlP9xavgSxYuDYj-y3ZcAkDszQJoc-1200--cover.jpg",
+            "qHu1UG6aJekLi0Lah2n8hg1ApXsB6kkqYkCTCzXOOqo-1200--cover.jpg",
+            "Vfr7HmIjgzcPPFn5QIheeRk7b9Cpa7IEklj9cGle9Ao-1200--cover.jpg",
+            "xvxwRXILuo4LOKetlsqk4FVS3alzFAtxCeKc6PfZ64g-1200--cover.jpg",
+            "ErR9iQAhhFImXyIzV7Z-st5vJrwWDSQ0IXs1indVLEs-1200--cover.jpg",
+            "px09QQvrFcdQbjEv0JHqadC1eLK6erkTkJcnclSW9ko-1200--cover.jpg",
+            "TCkzfXmGYtF6B7adwv2LCIzU4LfCAiDkTr_f5YV38-A-1200--cover.jpg",
+            "S-IwaqrGGMkEs0eFh9i78YqYXIPGgPLIjCf-O8QJruE-1200--cover.jpg",
+            "TnN3K1pKkoVg5MYVsgZmetgLWrtCjoac8xv_HqZdFys-1200--cover.jpg",
+            "wJskHv9gPnaXuSvPOHwGB60jUco0mxh01saybK86Fbk-1200--cover.jpg",
+            "wSzZbxLkKSvbQA2gpzXUAaUGL3wAvhFK3oF48ab8C0Q-1200--cover.jpg",
+            "yHx46puiB8yelm5kx3SYue8z0OzNMA2o8eyk9Txexdo-1200--cover.jpg",
+          ].map((filename, index) => (
+            <div
+              key={index}
+              className="group relative aspect-video overflow-hidden rounded-lg border bg-muted transition-all hover:shadow-lg"
+            >
+              <img
+                src={`/gallery/${filename}`}
+                alt={`Workshop photo ${index + 1}`}
+                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Info + Latest News Section */}
       <div className="space-y-6">
         {/* Latest News Section */}

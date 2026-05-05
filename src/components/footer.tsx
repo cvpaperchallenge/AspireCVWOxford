@@ -43,6 +43,12 @@ export function Footer() {
             Program
           </Link>
           <Link
+            to="/#gallery"
+            className="text-sm text-muted-foreground hover:text-foreground"
+          >
+            Gallery
+          </Link>
+          <Link
             to="/#news"
             className="text-sm text-muted-foreground hover:text-foreground"
           >
